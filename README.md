@@ -32,6 +32,12 @@
 * `ALTER TABLE tableName ADD COLUMN columnName VARCHAR(20);` : নতুন column যোগ।
 * `ALTER TABLE tableName RENAME COLUMN oldColumn TO newColumn;` : Column-এর নাম পরিবর্তন।
 * `ALTER TABLE tableName ALTER COLUMN columnName TYPE VARCHAR(30);` : Column-এর data type পরিবর্তন।
+* `ALTER TABLE employee ALTER salary SET DEFAULT 20000;` : কোনো field-এ default value সেট করা।
+* `ALTER TABLE employee ALTER salary DROP DEFAULT;` : কোনো field-এর default value মুছে ফেলা।
+* `ALTER TABLE employee ADD CONSTRAINT unique_employee_email UNIQUE(email);` : কোনো field-এ unique constraint যোগ করা (এখানে `unique_employee_email` হলো constraint নাম)।
+* `ALTER TABLE employee DROP CONSTRAINT employee_email_key;` : email-এর unique constraint মুছে ফেলা।
+* `ALTER TABLE employee ADD CONSTRAINT pk_employee_id PRIMARY KEY(id);` : কোনো field-কে primary key বানানো (এখানে `pk_employee_id` হলো primary key constraint নাম)।
+* `ALTER TABLE employee DROP CONSTRAINT employee_pkey;` : primary key constraint মুছে ফেলা।
 
 ## Data Insert Command
 
