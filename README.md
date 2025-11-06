@@ -26,6 +26,19 @@
 * `DROP TABLE tableName;` : কোনো table মুছে ফেলতে ব্যবহার হয়।
 * `SELECT * FROM tableName;` : table-এর সব ডেটা দেখতে।
 
+
+
+## Data Insert Command
+
+* `INSERT INTO tableName (column1, column2, ...) VALUES (value1, value2, ...);` : Table-এ ডেটা যোগ।
+  উদাহরণ:
+
+  ```sql
+  INSERT INTO class_info (className, email, totalStudent, passedStudent, failedStudent)
+  VALUES ('ClassTen1', 'classten@gmail.com', 10, 6, 2);
+  ```
+
+
 ## Alter Table Commands
 
 * `ALTER TABLE oldTableName RENAME TO newTableName;` : Table-এর নাম পরিবর্তন।
@@ -39,15 +52,22 @@
 * `ALTER TABLE employee ADD CONSTRAINT pk_employee_id PRIMARY KEY(id);` : কোনো field-কে primary key বানানো (এখানে `pk_employee_id` হলো primary key constraint নাম)।
 * `ALTER TABLE employee DROP CONSTRAINT employee_pkey;` : primary key constraint মুছে ফেলা।
 
-## Data Insert Command
+## SELECT Commands
 
-* `INSERT INTO tableName (column1, column2, ...) VALUES (value1, value2, ...);` : Table-এ ডেটা যোগ।
-  উদাহরণ:
+-- কোনো টেবিলের সব ডেটা দেখতে
+SELECT * FROM students;
 
-  ```sql
-  INSERT INTO class_info (className, email, totalStudent, passedStudent, failedStudent)
-  VALUES ('ClassTen1', 'classten@gmail.com', 10, 6, 2);
-  ```
+-- নির্দিষ্ট field এবং alias সহ ডেটা দেখা
+SELECT first_name AS "First Name", age AS "Age" FROM students;
+
+-- ডেটা বড় থেকে ছোট (Descending) ক্রমে সাজানো
+SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age DESC;
+-- DESC (Descending) মানে: বড় থেকে ছোট
+
+-- ডেটা ছোট থেকে বড় (Ascending) ক্রমে সাজানো
+SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age ASC;
+-- ASC (Ascending) মানে: ছোট থেকে বড়
+
 
 ## System Commands
 
