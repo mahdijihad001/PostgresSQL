@@ -54,19 +54,10 @@
 
 ## SELECT Commands
 
--- কোনো টেবিলের সব ডেটা দেখতে
-SELECT * FROM students;
-
--- নির্দিষ্ট field এবং alias সহ ডেটা দেখা
-SELECT first_name AS "First Name", age AS "Age" FROM students;
-
--- ডেটা বড় থেকে ছোট (Descending) ক্রমে সাজানো
-SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age DESC;
--- DESC (Descending) মানে: বড় থেকে ছোট
-
--- ডেটা ছোট থেকে বড় (Ascending) ক্রমে সাজানো
-SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age ASC;
--- ASC (Ascending) মানে: ছোট থেকে বড়
+* `SELECT * FROM students`; কোনো টেবিলের সব ডেটা দেখতে।
+* `SELECT first_name AS "First Name", age AS "Age" FROM students;` নির্দিষ্ট field এবং alias সহ ডেটা দেখা।
+* `SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age DESC;` ডেটা বড় থেকে ছোট (Descending) ক্রমে সাজানো DESC (Descending) মানে: বড় থেকে ছোট।
+* `SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age ASC;` ডেটা ছোট থেকে বড় (Ascending) ক্রমে সাজানো ASC (Ascending) মানে: ছোট থেকে বড়।
 
 
 ## System Commands
