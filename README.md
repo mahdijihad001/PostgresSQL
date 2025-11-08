@@ -91,6 +91,23 @@
 * `SELECT SUM(age) FROM students;` : সব age মান যোগফল (sum) দেখাবে।
 * `SELECT COUNT(age) FROM students;` : কতজনের age আছে (non-null rows) তা গণনা করে দেখাবে।
 
+## NULL Value Check
+* `SELECT * FROM tableName WHERE fieldName IS NULL;` : যেসব রো-তে field-এর মান NULL, সেগুলো দেখাবে।
+* `SELECT * FROM tableName WHERE NOT fieldName IS NULL;` : যেসব রো-তে field-এর মান NULL নয়, সেগুলো দেখাবে।
+
+## Replace NULL Value (COALESCE) 
+* `SELECT CONCAT(first_name, ' ', last_name), COALESCE(email, 'Not Provided') AS "Email" FROM students;` : যদি email NULL থাকে, তাহলে Not Provided দেখাবে।
+
+## LIMIT & OFFSET
+* `SELECT * FROM students LIMIT 5;` : প্রথম ৫টি রো দেখাবে।
+* `SELECT * FROM students LIMIT 5 OFFSET 10;` : প্রথম ১০টি রো স্কিপ করে পরের ৫টি রো দেখাবে।
+
+## Update Data
+* `UPDATE tableName SET fieldName = 'value', fieldName2 = 'value2' WHERE id = 1;` : নির্দিষ্ট condition অনুযায়ী ডেটা আপডেট করবে।
+
+## Delete Data
+* `DELETE FROM tableName WHERE age > 20 AND grade = 'A+';` : যেসব রো-তে age ২০ এর বেশি এবং grade A+, সেগুলো ডিলিট করবে।
+
 ---
 
 ## System Commands
