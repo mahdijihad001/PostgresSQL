@@ -83,6 +83,14 @@
 * `SELECT LENGTH(first_name) FROM students;` : first_name কলামের প্রতিটি মানের অক্ষরের সংখ্যা দেখাবে। উদাহরণ: যদি নাম হয় Anik, তাহলে ফলাফল হবে 4।
 * `SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM students;` : দুইটি কলাম একত্রে যোগ করে (concatenate) একটি নতুন কলাম তৈরি করবে। উদাহরণ: first_name = 'Anik' এবং last_name = 'Hasan' হলে দেখাবে Anik Hasan।
 
+## Aggregate Functions
+
+* `SELECT AVG(age) FROM students;` : সব age-এর গড় (average) দেখাবে।
+* `SELECT MAX(age) FROM students;` : সবচেয়ে বড় age মান দেখাবে।
+* `SELECT MIN(age) FROM students;` : সবচেয়ে ছোট age মান দেখাবে।
+* `SELECT SUM(age) FROM students;` : সব age মান যোগফল (sum) দেখাবে।
+* `SELECT COUNT(age) FROM students;` : কতজনের age আছে (non-null rows) তা গণনা করে দেখাবে।
+
 ---
 
 ## System Commands
