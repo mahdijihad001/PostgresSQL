@@ -79,7 +79,7 @@
 * `SELECT * FROM tableName WHERE fieldName LIKE 'A%';` : LIKE case-sensitive সার্চ করে — এখানে যেসব মান A দিয়ে শুরু হয় (যেমন Amin, Anik), সেগুলো দেখাবে।
 * `SELECT * FROM tableName WHERE fieldName ILIKE 'A%';` : ILIKE case-insensitive সার্চ করে — এখানে A বড় হোক বা ছোট (A বা a), দুই ক্ষেত্রেই মিলে যাবে (যেমন Anik, anik)।
   
-* স্ট্রিং সম্পর্কিত ফাংশনসমূহ *
+* স্ট্রিং সম্পর্কিত ফাংশনসমূহ 
 * `SELECT UPPER(first_name) FROM students;` : first_name কলামের সব অক্ষর বড় হরফে (Uppercase) দেখাবে। উদাহরণ: যদি নাম থাকে anik, তাহলে দেখাবে ANIK।
 * `SELECT LOWER(first_name) FROM students;` : first_name কলামের সব অক্ষর ছোট হরফে (Lowercase) দেখাবে। উদাহরণ: যদি নাম থাকে ANIK, তাহলে দেখাবে anik।
 * `SELECT LENGTH(first_name) FROM students;` : first_name কলামের প্রতিটি মানের অক্ষরের সংখ্যা দেখাবে। উদাহরণ: যদি নাম হয় Anik, তাহলে ফলাফল হবে 4।
