@@ -75,7 +75,9 @@
 * `SELECT * FROM students WHERE country NOT IN ('UK', 'USA');` : UK ও USA ছাড়া অন্য দেশের শিক্ষার্থী দেখাবে।  
 * `SELECT * FROM tableName WHERE columnName BETWEEN startValue AND endValue;` : নির্দিষ্ট রেঞ্জের (পরিসীমার) মধ্যে ডেটা দেখাবে।  
 * `SELECT * FROM students WHERE age BETWEEN 20 AND 25;` : ২০ থেকে ২৫ বছর বয়সী শিক্ষার্থী।  
-* `SELECT * FROM employees WHERE salary BETWEEN 20000 AND 50000;` : যাদের বেতন ২০,০০০ থেকে ৫০,০০০ টাকার মধ্যে।  
+* `SELECT * FROM employees WHERE salary BETWEEN 20000 AND 50000;` : যাদের বেতন ২০,০০০ থেকে ৫০,০০০ টাকার মধ্যে।
+* `SELECT * FROM tableName WHERE fieldName LIKE 'A%';` : LIKE case-sensitive সার্চ করে — এখানে যেসব মান A দিয়ে শুরু হয় (যেমন Amin, Anik), সেগুলো দেখাবে।
+* `SELECT * FROM tableName WHERE fieldName ILIKE 'A%';` : ILIKE case-insensitive সার্চ করে — এখানে A বড় হোক বা ছোট (A বা a), দুই ক্ষেত্রেই মিলে যাবে (যেমন Anik, anik)।
 
 ---
 
