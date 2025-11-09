@@ -59,11 +59,14 @@
 
 * `SELECT * FROM students;` : কোনো টেবিলের সব ডেটা দেখতে।  
 * `SELECT first_name AS "First Name", age AS "Age" FROM students;` : নির্দিষ্ট ফিল্ড ও এলিয়াস (Alias) সহ ডেটা দেখা।  
-* `SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age DESC;` : বয়স অনুযায়ী বড় থেকে ছোট ক্রমে সাজানো (DESC মানে: বড় থেকে ছোট)।  
-* `SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age ASC;` : বয়স অনুযায়ী ছোট থেকে বড় ক্রমে সাজানো (ASC মানে: ছোট থেকে বড়)।
 * `SELECT * FROM tableName WHERE fieldName = 'value';` : নির্দিষ্ট মান অনুসারে ফিল্টার করা।  
 * `SELECT * FROM students WHERE student_id = 10;` : student_id ১০ এমন রেকর্ড দেখাবে।  
 * `SELECT * FROM students WHERE course = 'MERN';` : শুধুমাত্র MERN কোর্স করা শিক্ষার্থীদের দেখাবে।
+
+ ## Order By (DESC & ASC)
+ 
+* `SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age DESC;` : বয়স অনুযায়ী বড় থেকে ছোট ক্রমে সাজানো (DESC মানে: বড় থেকে ছোট)।  
+* `SELECT first_name AS "First Name", age AS "Age" FROM students ORDER BY age ASC;` : বয়স অনুযায়ী ছোট থেকে বড় ক্রমে সাজানো (ASC মানে: ছোট থেকে বড়)।
 
 ## Distinct Keyword
   
